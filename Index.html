@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jefferson Merchan">
+    <meta name="description" content="Etiquetas">
+    <title>Lojas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container py-3">
+        <div class="row pt-4">
+            <div class="col-sm-12 col-md-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="chk_1">
+                    <label class="form-check-label" for="chk_1">LittleFante</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="chk_2">
+                    <label class="form-check-label" for="chk_2">Isabella Baby</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="chk_3">
+                    <label class="form-check-label" for="chk_3">Caraminholas</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="chk_4">
+                    <label class="form-check-label" for="chk_4">Sapituca</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="chk_5">
+                    <label class="form-check-label" for="chk_5">NT</label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 mb-3">
+                        <label for="txt_ref" class="form-label">Referencia</label>
+                        <input type="text" class="form-control" id="txt_ref">
+                    </div>
+                    <div class="col-sm-12 col-md-12 mb-3">
+                        <label for="file_qr" class="form-label">Codigo QR</label>
+                        <input class="form-control" type="file" id="file_qr">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="txt_detail" class="form-label">Detalle</label>
+            <textarea class="form-control" id="txt_detail" rows="10"></textarea>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button id="btn_generar" type="button" class="btn btn-success mx-2">Generar </button>
+            <button id="btn_pdf" type="button" class="btn btn-danger mx-2">Download PDF</button>
+        </div>
+    </div>
+
+    <div class="pb-5 form">
+        <div class="d-flex justify-content-center py-3">
+            <div class="card border border-3" style="width: 40%;">
+                <div class="card-body text-center">
+                    <p class="fs-6">IMPORTADOR:</p>
+                    <p id="lbl_cnpj_1" class="fs-5"></p>
+                    <p id="lbl_ref_1" class="fs-5"></p>
+                    <p class="fs-6">PRODUZIDO NA CHINA</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="card border border-3" style="width: 80%;">
+                <div class="card-body">
+                    <p id="lbl_detail" class="fs-6"></p>
+                    <div class="row py-2 text-center">
+                        <div class="col-sm-6">
+                            <p class="fs-6">IMPORTADOR:</p>
+                            <p id="lbl_cnpj_2" class="fs-5"></p>
+                            <p id="lbl_ref_2" class="fs-5"></p>
+                        </div>
+                        <div class="col-sm-6 mt-3">
+                            <img id="img_qr" alt="Bar code" height="100">
+                        </div>
+                        <p class="fs-6">PRODUZIDO NA CHINA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <!-- <script src="./bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="./bootstrap-5.3.1/js/jquery-3.7.1.min.js"></script> -->
+    <!-- <script src="./bootstrap-5.3.1/js/jspdf.min.js"></script> -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
